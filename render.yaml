@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-private-proxy
+    runtime: docker
+    plan: free
+    envVars:
+      - key: VPN_UUID
+        sync: false
+      - key: VPN_PATH
+        sync: false
+      - key: ENABLE_TOR
+        value: "1"
